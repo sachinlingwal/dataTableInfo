@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 15em;
+  height: 2.8em;
+  /* justify-content: space-evenly; */
+  /* background-color: rgb(69, 137, 196); */
+  /* border: 1px solid black; */
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 0.9em 0.9em 0em 0em;
+  color: #77a2d3;
+  /* background-color: #6c2929;  */
+  /* color: white; */
+  /* margin: 1em; */
+  /* background-color: white; */
+
+  border: 0.5px solid #f2f5f9;
+}
+.container::after {
+  border: 0.5px solid rgba(253, 253, 253, 1);
+  content: "";
+  position: absolute;
+  width: 37%;
+  height: 70%;
+  top: 0;
+  right: -47px;
+  transform-origin: 47% 0;
+  transform: rotate(40deg);
+  background-color: #f2f5f9;
+}
+.count,
+.infoName {
+  margin-left: 1em;
+}
+.count > p {
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0.2em 0.3em;
+  color: white;
+  background: #5e8cc8;
+}
